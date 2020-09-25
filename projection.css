@@ -1,0 +1,258 @@
+/* ---- REUSABLE COMPONENTS ---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  color: white;
+  background-color: white;
+}
+
+.row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ---- HEADER ---- */
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(75, 75, 93, 0.85), rgba(75, 75, 93, 0.85)), url(resources/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.author {
+  float: left;
+  font-weight: 300;
+  margin: 100px 0 0 150px;
+}
+
+.nvtext a:link,
+.nvtext a:visited,
+.author a:link,
+.author a:visited {
+  color: white;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+span {
+  color: rgb(87, 182, 110);
+}
+
+.nvtext {
+  float: right;
+  margin: 100px 150px 0 0;
+  font-weight: 300;
+}
+
+/* ---- PROJECT 1 ---- */
+
+.headcontent::before {
+  content: "";
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  height: 2px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.247);
+  margin-bottom: 100px;
+}
+
+.headcontent {
+  text-align: center;
+}
+
+p,
+h1,
+h2 {
+  color: white;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 150%;
+  font-weight: 400;
+}
+
+p {
+  font-size: 100%;
+  word-spacing: 0;
+}
+
+.icosn-small {
+  font-size: 300%;
+  color: #6cc091;
+}
+
+.bordesr {
+  border-right: 1px solid #6cc091;
+}
+
+.bordesr:nth-last-child(3) {
+  border-right: none;
+}
+
+.start {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.start a {
+  transition: all 0.3s;
+}
+
+.start a:hover,
+.start a:active {
+  background-color: #6cc0901a;
+}
+
+.btn-start {
+  color: #6cc091;
+  text-decoration: none;
+  border: 2px solid #6cc091;
+  border-radius: 20px;
+  padding: 10px 40px;
+}
+
+/* ---- PROJECT 2 ---- */
+
+.customer {
+  margin: 50px 0 0 0;
+  height: 80vh;
+  text-align: center;
+}
+
+.customer img {
+  border-radius: 200%;
+}
+
+h3,
+h4 {
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.customer p {
+  color: black;
+  margin: 20px 0 30px 0;
+}
+
+.btn-middle:link,
+.btn-middle:visited {
+  color: #6cc091;
+  text-decoration: none;
+  border: 3px solid #6cc090;
+  border-radius: 20px;
+  padding: 10px 60px;
+  transition: all 0.3s;
+}
+
+.btn-middle:hover,
+.btn-middle:active {
+  background-color: #6cc09025;
+}
+
+/* ---- FOOTER + Contact Form ---- */
+
+footer {
+  background-color: #6cc090;
+  height: 80vh;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.contact-forms input[type="text"],
+input[type="email"] {
+  width: 100%;
+}
+
+form .contact-forms {
+  width: 48%;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.first {
+  margin-right: 3%;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 2px solid #8dcca9;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin: 10px 0;
+  background-color: #6cc090;
+}
+
+label {
+  margin-left: 5px;
+  color: white;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: white;
+}
+
+.msgbox {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+}
+
+textarea[name="message"] {
+  border: 2px solid #8dcca9;
+  border-radius: 10px;
+  background-color: #6cc090;
+  width: 100%;
+  height: 150px;
+  padding: 30px 0 0 10px;
+  margin: 10px 0;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  border: 2px solid white;
+  background-color: #8dcca9;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #6cc09063;
+  cursor: pointer;
+}
